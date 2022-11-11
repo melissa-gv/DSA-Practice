@@ -37,11 +37,12 @@ class MaxBinaryHeap {
   extractMax() {
     if (this.values.length === 0) return null
 
+    let max = this.values[0]
     if (this.values.length === 1) {
-      return this.values[0]
+      this.values.pop()
+      return max
     }
 
-    let max = this.values[0]
     let end = this.values.pop()
     this.values[0] = end
     this.sinkDown()
