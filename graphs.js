@@ -124,7 +124,7 @@ g.addEdge("D","F")
 g.addEdge("E","F")
 console.log(g.DFTRecursive("A")) // [ 'A', 'B', 'D', 'E', 'C', 'F' ]
 console.log(g.DFTIterative("A")) // [ 'A', 'C', 'E', 'F', 'D', 'B' ]
-console.log(g.breadthFirst("A")) // [ 'A', 'C', 'E', 'F', 'D', 'B' ]
+console.log(g.breadthFirst("A")) // [ 'A', 'B', 'C', 'D', 'E', 'F' ]
 
 
 
