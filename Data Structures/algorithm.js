@@ -160,7 +160,5 @@ graph.addEdge("D","E", 3);
 graph.addEdge("D","F", 1);
 graph.addEdge("E","F", 1);
 
-
 console.log(graph.Dijkstra("A", "E"))
-
-// ["A", "C", "D", "F", "E"]
+[ 'A', 'C', 'D', 'F', 'E' ]
