@@ -14,7 +14,6 @@ function findLongestSubstring(str){
     seen[str[i]] = i + 1
   }
   return longest
-
 }
 
 console.log(findLongestSubstring('')) // 0
