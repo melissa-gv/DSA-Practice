@@ -18,11 +18,6 @@ class Graph {
   }
 
   removeEdge(vertex1, vertex2) {
-    // let index1 = this.adjacencyList[v1].indexOf(v2)
-    // this.adjacencyList[v1].splice(index1, 1);
-    // let index2 = this.adjacencyList[v2].indexOf(v1)
-    // this.adjacencyList[v2].splice(index2, 1);
-
     this.adjacencyList[vertex1] = this.adjacencyList[vertex1].filter((v) => {
       v !== vertex2
     })

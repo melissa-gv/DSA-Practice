@@ -159,12 +159,17 @@ class SingleLinkedList {
   }
 
   reverse() {
+    // start at head (store old head in current)
     let current = this.head
+    // set head to be the tail as that is the new beginning
     this.head = this.tail
+    // tail is the old head
     this.tail = current
 
+    // define next and set prev to null
     let next
     let prev = null
+    // while there is a node (in the old order)
     while (current) {
       next = current.next
       current.next = prev
